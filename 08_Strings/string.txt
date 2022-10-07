@@ -1,0 +1,1 @@
+A string is a 1D character array terminated by a null('\0')
