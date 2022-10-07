@@ -1,0 +1,25 @@
+File pointer :
+The "FIle" is a structure which needs to be created for opening the file;
+Afile pointer is apointer to this structure of the file.
+
+File pointer is needed for communication between the file and the program.
+
+A file pointer can be created as follows;
+
+File *ptr;
+ptr = fopen("filename.txt", "mode");
+
+File opening mode in C;
+C offer  the programmers to select a mode for opening a file.
+
+r   --> open for reading
+rb  --> open for reading in binary
+==> if the file doesn't exist, fopen returns NULL;
+
+w   --> open for writing
+wb  --> open for writing in binary
+==> if the file does exist,the contents will be overwritten;
+
+a   --> open for append
+ab  --> open for append in binary
+==> if the file does not exist,it will be created;

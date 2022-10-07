@@ -1,0 +1,42 @@
+What is a function?
+-->A function is a block of code that performs a particular task.
+A function can be reused by the programmer in a given program any number of times.
+
+#include<stdio.h>
+void  display();                   // Function prototype
+int main(){
+int a;
+display();                          // Function call
+return(0);
+}
+
+void display(){                           // Function definition
+printf(“Hi I am display”);
+}
+
+
+Function prototype:
+-->Function prototype is a way to tell the compiler about the function we are going to define in the program.
+Here void indicates that the function returns nothing.
+
+Function call:
+-->Function call is a way to tell the compiler to execute the function body at the time the call is made.
+Note that the program execution starts from the main function in the sequence the instructions are written.
+
+Function definition:
+-->This part contains the exact set of instructions that are executed during the function call.
+When a function is called from main(), the main function falls asleep and gets temporarily suspended.
+During this time, the control goes to the function being called when the function body is done executing main() resumes.
+
+
+
+Recursion:
+A function defined in C can call itself. This is called recursion.
+A function calling itself is also called a recursive function.
+
+Important Notes:
+1. Recursion is sometimes the most direct way to code an algorithm.
+2. The condition which doesn’t call the function any further in a recursive function is called
+   the base condition.
+3. Sometimes, due to a mistake made by the programmer, a recursive function can keep running
+   without returning, resulting in a memory error.
