@@ -1,0 +1,14 @@
+C is a language with some fixed rules of programming. For example: changing the size of an array is not allowed
+
+Dynamic Memory allocation:
+    Dynamic Memory allocation is a way to allocate memory to a data structure during the runtime. We can use DMA function variable in c to allocate and free memory during runtime.
+
+function for DMA in c:
+
+1. malloc()
+2. calloc()
+3. free()
+4. realoc()
+
+1. malloc() function: malloc stands for memory allocate. It takes number of bytes to be allocate as an input and returns a pointer of type void
+
